@@ -9,6 +9,6 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 set(COMMON_FLAGS "-flto -Wall -Wextra -Wpedantic")
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${COMMON_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${COMMON_FLAGS}")
 
 add_executable(shrug main.cc)
